@@ -1,0 +1,19 @@
+[project]
+name = "humid"
+version = "0.1.0"
+description = "Human Friendly Readable UUIDs"
+authors = [{ name = "W. Meijer", email = "houterm+humid@gmail.com" }]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3.2"]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
