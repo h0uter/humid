@@ -1,3 +1,3 @@
-from humid import human_id
+from humid import generate
 
-print(human_id())
+print(generate())

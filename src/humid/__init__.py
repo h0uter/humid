@@ -1,3 +1,3 @@
-from .main import human_id
+from .main import generate
 
-__all__ = ["human_id"]
+__all__ = ["generate"]
