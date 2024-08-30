@@ -11,7 +11,7 @@ from .words.quantity import QUANTITIES
 from .words.shape import SHAPES
 from .words.size import SIZES
 
-ORDER = [
+save_imports_from_ruff = [
     QUANTITIES,
     OPINIONS,
     SIZES,
@@ -21,6 +21,18 @@ ORDER = [
     ORIGINS,
     MATERIALS,
     PURPOSES,
+    NAMES,
+]
+ORDER = [
+    # QUANTITIES,
+    OPINIONS,
+    SIZES,
+    AGES,
+    SHAPES,
+    COLORS,
+    # ORIGINS,
+    # MATERIALS,  # material doesnt make sense for pokemon
+    # PURPOSES,
     NAMES,
 ]
 
