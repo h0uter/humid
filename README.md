@@ -18,9 +18,9 @@
     <a href="# TODO"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="# TODO">Report Bug</a>
+    <a href="https://github.com/h0uter/humid/issues/new?labels=bug&title=New+bug+report">Report Bug</a>
     ·
-    <a href="# TODO">Request Feature</a>
+    <a href="https://github.com/h0uter/humid/issues/new?labels=enhancement&title=New+feature+request">Request Feature</a>
   </p>
 </div>
 
