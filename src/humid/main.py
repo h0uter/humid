@@ -39,7 +39,7 @@ ORDER = [
 ]
 
 
-def print_risk() -> None:
+def show_risk() -> None:
     one_in_xxx = "{:,}".format(helpers.one_in_XXXXX_chance_of_duplicate(ORDER)).replace(
         ",", "."
     )
@@ -49,9 +49,10 @@ def print_risk() -> None:
     )
 
 
-def generate() -> str:
+def generate(print_risk=False) -> str:
     """Returns a human readable identifier."""
-    print_risk()
+    if print_risk:
+        show_risk()
 
     SEP = "-"
     selection: list[str] = []

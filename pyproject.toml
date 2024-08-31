@@ -1,7 +1,7 @@
 [project]
 name = "humid"
 version = "0.1.0"
-description = "Human Friendly Readable UUIDs"
+description = "Human Friendly UUIDs"
 authors = [{ name = "W. Meijer", email = "houterm+humid@gmail.com" }]
 dependencies = []
 requires-python = ">=3.8"
