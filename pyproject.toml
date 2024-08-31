@@ -21,7 +21,8 @@ keywords = [
 classifiers = ['Programming Language :: Python :: 3']
 
 [project.optional-dependencies]
-dev = ["pytest>=8.3.2"]
+dev = ["pytest>=8.3.2", "pre-commit>=3.5.0"]
+docs = ["mkdocs-material>=9.5.33", "mkdocstrings-python>=1.10.9"]
 
 
 [build-system]
