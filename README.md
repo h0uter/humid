@@ -55,9 +55,9 @@ python -m humid
 
 Use in Python code
 ```python
-import humid
+from humid import hrid
 
-uuid = humid.generate()
+uuid = hrid()
 print(uuid)
 >> good-narrow-senior-zigzag-plum-Steelix
 ```
