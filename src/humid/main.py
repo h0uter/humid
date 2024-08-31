@@ -39,14 +39,21 @@ ORDER = [
 ]
 
 
-def generate() -> str:
-    """Returns a human readable identifier."""
-    SEP = "-"
+def print_risk() -> None:
+    one_in_xxx = "{:,}".format(helpers.one_in_XXXXX_chance_of_duplicate(ORDER)).replace(
+        ",", "."
+    )
+    probability_percentage = f"{helpers.probability_of_duplicate(ORDER) * 100:.2e}%"
     print(
-        # f"The probability of intersection = {calc_probability_of_duplicate() * 100:.2e}%"
-        f"The probability of intersection is 1 in {"{:,}".format(helpers.calc_1_in_XXXXX_chance_of_duplicate(ORDER)).replace(",", ".")}"
+        f"Probability of UUID collision is 1 in {one_in_xxx} AKA {probability_percentage}"
     )
 
+
+def generate() -> str:
+    """Returns a human readable identifier."""
+    print_risk()
+
+    SEP = "-"
     selection: list[str] = []
     for words_to_choose_from in ORDER:
         selection.append(random.choice(words_to_choose_from))

@@ -1,4 +1,4 @@
-def calc_probability_of_duplicate(list_lists_of_words: list[list[str]]):
+def probability_of_duplicate(list_lists_of_words: list[list[str]]):
     lengths = []
     odds = 1
     for list in list_lists_of_words:
@@ -10,7 +10,7 @@ def calc_probability_of_duplicate(list_lists_of_words: list[list[str]]):
     return odds
 
 
-def calc_1_in_XXXXX_chance_of_duplicate(list_lists_of_words: list[list[str]]):
+def one_in_XXXXX_chance_of_duplicate(list_lists_of_words: list[list[str]]):
     lengths = []
     odds = 1
     for list in list_lists_of_words:
