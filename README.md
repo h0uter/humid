@@ -16,7 +16,7 @@
   <p align="center">
     Human Friendly UUIDs
     <br />
-    <a href="# TODO"><strong>Explore the docs »</strong></a>
+    <a href="https://h0uter.github.io/humid"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/h0uter/humid/issues/new?labels=bug&title=New+bug+report">Report Bug</a>
