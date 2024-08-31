@@ -1,6 +1,6 @@
 [project]
 name = "humid"
-version = "0.1.0"
+version = "0.1.1"
 description = "Human Friendly UUIDs that are readable and pronounceable."
 authors = [{ name = "W. Meijer", email = "houterm+humid@gmail.com" }]
 dependencies = []
