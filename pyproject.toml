@@ -10,6 +10,8 @@ license = { text = "MIT" }
 
 [project.optional-dependencies]
 dev = ["pytest>=8.3.2"]
+
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
@@ -17,3 +19,4 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+build.package-dir = "src"
