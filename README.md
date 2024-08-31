@@ -30,6 +30,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About the Project</a></li>
+    <li><a href="#quickstart">Quickstart</a></li>
   </ol>
 </details>
 
