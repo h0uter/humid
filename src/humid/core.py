@@ -11,19 +11,9 @@ from .words.quantity import QUANTITIES
 from .words.shape import SHAPES
 from .words.size import SIZES
 
-save_imports_from_ruff = [
-    QUANTITIES,
-    OPINIONS,
-    SIZES,
-    AGES,
-    SHAPES,
-    COLORS,
-    ORIGINS,
-    MATERIALS,
-    PURPOSES,
-    NAMES,
-]
-"""The order in which the hrid is constructed."""
+"""
+The order in which the hrid is constructed.
+"""
 ORDER = [
     # QUANTITIES,
     OPINIONS,
@@ -45,7 +35,7 @@ def hrid() -> str:
 
 
     Returns:
-        str: The human readable identifier based on elements in `ORDER`.
+        str: The human readable identifier based on elements in`ORDER`.
     """
     selection: list[str] = []
     for words_to_choose_from in ORDER:
@@ -54,3 +44,17 @@ def hrid() -> str:
     the_id = SEP.join(selection)
 
     return the_id
+
+
+save_imports_from_ruff = [
+    QUANTITIES,
+    OPINIONS,
+    SIZES,
+    AGES,
+    SHAPES,
+    COLORS,
+    ORIGINS,
+    MATERIALS,
+    PURPOSES,
+    NAMES,
+]

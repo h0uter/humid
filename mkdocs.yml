@@ -3,7 +3,7 @@ repo_url: https://github.com/h0uter/humid # backlink to repo
 repo_name: humid # name to display on backlink to repo
 
 nav:
-  - index.md
+  - Home: index.md
 
 plugins:
   - search # search box
@@ -30,4 +30,4 @@ extra:
     - icon: material/email
       link: mailto:houterm+humid@gmail.com
 
-copyright: Copyright &copy; Wouter Meijer
+copyright: Copyright &copy; <a href="https://h0uter.github.io/" target="_blank">Wouter Meijer</a>
