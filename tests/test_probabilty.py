@@ -1,5 +1,5 @@
 from humid import helpers
-from humid.main import ORDER
+from humid.core import ORDER
 
 # def maximum_chance_of_collision():
 #     duplicate_probability = helpers.calc_probability_of_duplicate(ORDER)

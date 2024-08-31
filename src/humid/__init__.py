@@ -1,3 +1,3 @@
-from .main import generate
+from .core import generate
 
 __all__ = ["generate"]
