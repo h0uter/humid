@@ -1,8 +1,8 @@
-from humid import generate
+from humid import hrid
 
 
 def test_basic():
-    my_id = generate()
+    my_id = hrid()
     assert isinstance(my_id, str)
 
 
@@ -11,7 +11,7 @@ def test_no_duplicate_id():
     ids = set()
 
     for i in range(TIMES_TO_GENERATE):
-        the_id = generate()
+        the_id = hrid()
 
         if the_id in ids:
             raise ValueError(f"iter {i}: {the_id} already present in set")

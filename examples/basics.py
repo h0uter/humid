@@ -1,3 +1,3 @@
-from humid import generate
+from humid import hrid
 
-print(generate())
+print(hrid())

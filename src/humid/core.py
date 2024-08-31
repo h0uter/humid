@@ -1,7 +1,5 @@
 import random
 
-from humid import helpers
-
 from .words.age import AGES
 from .words.color import COLORS
 from .words.material import MATERIALS
@@ -25,6 +23,7 @@ save_imports_from_ruff = [
     PURPOSES,
     NAMES,
 ]
+"""The order in which the hrid is constructed."""
 ORDER = [
     # QUANTITIES,
     OPINIONS,
@@ -41,21 +40,13 @@ ORDER = [
 SEP = "-"
 
 
-def show_risk() -> None:
-    one_in_xxx = "{:,}".format(helpers.one_in_XXXXX_chance_of_duplicate(ORDER)).replace(
-        ",", "."
-    )
-    probability_percentage = f"{helpers.probability_of_duplicate(ORDER) * 100:.2e}%"
-    print(
-        f"Probability of UUID collision is 1 in {one_in_xxx} AKA {probability_percentage}"
-    )
+def hrid() -> str:
+    """Returns a human readable identifier.
 
 
-def generate(print_risk=False) -> str:
-    """Returns a human readable identifier."""
-    if print_risk:
-        show_risk()
-
+    Returns:
+        str: The human readable identifier based on elements in `ORDER`.
+    """
     selection: list[str] = []
     for words_to_choose_from in ORDER:
         selection.append(random.choice(words_to_choose_from))

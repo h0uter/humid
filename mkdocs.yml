@@ -2,10 +2,8 @@ site_name: humid Docs
 repo_url: https://github.com/h0uter/humid # backlink to repo
 repo_name: humid # name to display on backlink to repo
 
-nav: # put the pages for the left sidebar here (correspond to `.md` files in `docs/`)
+nav:
   - index.md
-  - public_api_only.md
-  - all.md
 
 plugins:
   - search # search box

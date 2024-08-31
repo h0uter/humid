@@ -1,3 +1,3 @@
-from .core import generate
+from .core import hrid
 
-__all__ = ["generate"]
+__all__ = ["hrid"]
