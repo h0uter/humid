@@ -38,6 +38,8 @@ ORDER = [
     NAMES,
 ]
 
+SEP = "-"
+
 
 def show_risk() -> None:
     one_in_xxx = "{:,}".format(helpers.one_in_XXXXX_chance_of_duplicate(ORDER)).replace(
@@ -54,7 +56,6 @@ def generate(print_risk=False) -> str:
     if print_risk:
         show_risk()
 
-    SEP = "-"
     selection: list[str] = []
     for words_to_choose_from in ORDER:
         selection.append(random.choice(words_to_choose_from))
