@@ -45,12 +45,21 @@
 
 # Quickstart
 
+install
 ```sh
 pip install humid
 python -m humid
 >> good-narrow-senior-zigzag-plum-Steelix
 ```
 
+Use in Python code
+```python
+import humid
+
+uuid = humid.generate()
+print(uuid)
+>> good-narrow-senior-zigzag-plum-Steelix
+```
 
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
