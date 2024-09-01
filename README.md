@@ -31,6 +31,7 @@
   <ol>
     <li><a href="#about-the-project">About the Project</a></li>
     <li><a href="#quickstart">Quickstart</a></li>
+    <li><a href="#planned-improvements">Planned Improvements</a></li>
   </ol>
 </details>
 
@@ -61,6 +62,24 @@ uuid = hrid()
 print(uuid)
 >> good-narrow-senior-zigzag-plum-Steelix
 ```
+
+<!--
+<div align="right">(<a href="#readme-top">back to top</a>)</div>
+
+
+# Why humid?
+
+-  -->
+
+
+<div align="right">(<a href="#readme-top">back to top</a>)</div>
+
+# Planned Improvements
+
+- [ ] reduce collision chance
+  - [ ] combine UUID part with word part
+- [ ] command line options
+- [ ] setup script alias
 
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>

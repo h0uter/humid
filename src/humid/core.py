@@ -35,7 +35,7 @@ def hrid() -> str:
 
 
     Returns:
-        str: The human readable identifier based on elements in`ORDER`.
+        str: The human readable identifier based on elements in `ORDER`.
     """
     selection: list[str] = []
     for words_to_choose_from in ORDER:
