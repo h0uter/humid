@@ -3,7 +3,6 @@ name = "humid"
 version = "0.1.1"
 description = "Human Friendly UUIDs that are readable and pronounceable."
 authors = [{ name = "W. Meijer", email = "houterm+humid@gmail.com" }]
-dependencies = []
 requires-python = ">=3.8"
 readme = "README.md"
 license = { text = "MIT" }
@@ -24,6 +23,8 @@ classifiers = ['Programming Language :: Python :: 3']
 dev = ["pytest>=8.3.2", "pre-commit>=3.5.0", "uniplot>=0.14.1"]
 docs = ["mkdocs-material>=9.5.33", "mkdocstrings-python>=1.10.9"]
 
+[project.scripts]
+humid = "humid.__main__:main"
 
 [build-system]
 requires = ["pdm-backend"]

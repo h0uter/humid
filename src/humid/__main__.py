@@ -1,3 +1,5 @@
 from humid import hrid
 
-print(hrid())
+
+def main():
+    print(hrid())
