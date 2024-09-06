@@ -61,11 +61,13 @@ def obtain_durations(
 
 def test_hrid_comparison_faster_than_uuid4_comparison():
     """Test comparison of hrid's is at least same speed or greater than uuid4's"""
+    N_EXPERIMENTS = 100
+
     uuid4_avg_duration = obtain_durations(
-        uuid_constructor=uuid4, nr_uuids=1000, n_experiments=100
+        uuid_constructor=uuid4, nr_uuids=1000, n_experiments=N_EXPERIMENTS
     )
     hrid_avg_duration = obtain_durations(
-        uuid_constructor=hrid, nr_uuids=1000, n_experiments=100
+        uuid_constructor=hrid, nr_uuids=1000, n_experiments=N_EXPERIMENTS
     )
 
     print(f"uuid4 avg duration: {uuid4_avg_duration}")
