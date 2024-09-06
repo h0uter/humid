@@ -59,8 +59,8 @@ def obtain_durations(
     return avg_duration
 
 
-def test_hrid_comparison_faster_than_uuid4():
-    """Test comparison of hrids is same speed as uuid4"""
+def test_hrid_comparison_faster_than_uuid4_comparison():
+    """Test comparison of hrid's is at least same speed or greater than uuid4's"""
     uuid4_avg_duration = obtain_durations(
         uuid_constructor=uuid4, nr_uuids=1000, n_experiments=100
     )
@@ -72,6 +72,3 @@ def test_hrid_comparison_faster_than_uuid4():
     print(f"hrid avg duration: {hrid_avg_duration}")
 
     assert hrid_avg_duration <= uuid4_avg_duration
-
-
-test_hrid_comparison_faster_than_uuid4()
