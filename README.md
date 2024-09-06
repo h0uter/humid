@@ -1,8 +1,8 @@
 <a name="readme-top"></a>
+[![Downloads](https://static.pepy.tech/badge/humid)](https://pepy.tech/project/humid)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
-
 
 <!-- PROJECT LOGO -->
 
@@ -78,7 +78,9 @@ print(uuid)
 
 - [ ] reduce collision chance
   - [ ] combine UUID part with word part
+  - [ ] {ADJECTIVE}-{ANIMAL|POKEMON}-{UUID*22}
 - [ ] command line options
+  - [ ] different types of hrid's
 - [ ] setup script alias
 
 
