@@ -17,3 +17,6 @@ def test_no_duplicate_id():
             raise ValueError(f"iter {i}: {the_id} already present in set")
 
         ids.add(the_id)
+
+
+BD_EXAMPLE = "snapshot_fewest-goby-UJDUrIoLN8V2DeCyTv4FkA=="
