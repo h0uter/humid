@@ -51,6 +51,7 @@ def hrid() -> str:
     return the_id
 
 
+# Note that adjectives should always go in this order in the english language.
 save_imports_from_ruff = [
     QUANTITIES,
     OPINIONS,
