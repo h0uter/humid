@@ -1,5 +1,4 @@
 import random
-import string
 from uuid import uuid4
 
 BD_EXAMPLE = "snapshot_fewest-goby-UJDUrIoLN8V2DeCyTv4FkA=="
@@ -25,23 +24,3 @@ def random_capitalize(sentence: str) -> str:
             for c in sentence
         ]
     )
-
-
-def random_seq() -> str:
-    """Generate a random alphanumeric string.
-
-    Returns:
-        str: The random string.
-    """
-    return "".join(random.choices(string.ascii_letters + string.digits, k=22))
-
-
-cool = get_random_part()
-
-print(cool)
-
-wow = random_capitalize(cool)
-print(wow)
-
-
-print(random_seq())
