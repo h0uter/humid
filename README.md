@@ -41,7 +41,8 @@
     <img src=".readme/demo.gif" alt="alt text" width="1000" height="whatever">
 </div>
 
-`humid` makes it easy to generate human friendly UUIDs that are readable and pronounceable.
+`humid` makes it easy to generate **h**uman **r**eadable uu**id**'s (`hrid`'s) that are readable and pronounceable. Creation follows the pattern: `{ADJECTIVE}-{ANIMAL|POKEMON}-{UUID*22}`.
+
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 
@@ -51,7 +52,7 @@ install
 ```sh
 pip install humid
 python -m humid
->> good-narrow-senior-zigzag-plum-Steelix
+>> elegant-redfox-vkynw0OlJDxI15gcgdLmUn
 ```
 
 Use in Python code
@@ -60,7 +61,7 @@ from humid import hrid
 
 uuid = hrid()
 print(uuid)
->> good-narrow-senior-zigzag-plum-Steelix
+>> elegant-redfox-vkynw0OlJDxI15gcgdLmUn
 ```
 
 <!--
@@ -76,9 +77,6 @@ print(uuid)
 
 # Planned Improvements
 
-- [ ] reduce collision chance
-  - [ ] combine UUID part with word part
-  - [ ] {ADJECTIVE}-{ANIMAL|POKEMON}-{UUID*22}
 - [ ] command line options
   - [ ] different types of hrid's
 - [ ] setup script alias

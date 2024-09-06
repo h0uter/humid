@@ -37,3 +37,8 @@ def show_risk() -> None:
     print(
         f"Probability of UUID collision is 1 in {one_in_xxx} AKA {probability_percentage}"
     )
+
+
+def print_as_list(strings: list[str]):
+    for element in strings:
+        print(f'"{element}",')
