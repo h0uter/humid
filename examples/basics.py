@@ -1,3 +1,5 @@
 from humid import hrid
 
-print(hrid())
+my_id = hrid()
+
+print(my_id)
