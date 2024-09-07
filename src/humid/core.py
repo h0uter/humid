@@ -4,12 +4,9 @@ import string
 from .words.age import AGES
 from .words.animals import ANIMALS
 from .words.color import COLORS
-from .words.material import MATERIALS
 from .words.opininion import OPINIONS
 from .words.origin import ORIGINS
 from .words.pokemon import pokemon_names as NAMES
-from .words.purpose import PURPOSES
-from .words.quantity import QUANTITIES
 from .words.shape import SHAPES
 from .words.size import SIZES
 
@@ -33,15 +30,15 @@ def make_identifier(length=22) -> str:
 
 
 def hrid() -> str:
-    """Returns a human readable identifier.
+    """Returns a default human readable identifier.
 
 
     Returns:
         str: The human readable identifier based on elements in `ORDER`.
     """
     selection: list[str] = []
-    for words_to_choose_from in ORDER:
-        selection.append(random.choice(words_to_choose_from))
+    for words in ORDER:
+        selection.append(random.choice(words))
 
     """Add the identifier string"""
     selection.append(make_identifier())
@@ -49,18 +46,3 @@ def hrid() -> str:
     the_id = SEP.join(selection)
 
     return the_id
-
-
-# Note that adjectives should always go in this order in the english language.
-save_imports_from_ruff = [
-    QUANTITIES,
-    OPINIONS,
-    SIZES,
-    AGES,
-    SHAPES,
-    COLORS,
-    ORIGINS,
-    MATERIALS,
-    PURPOSES,
-    NAMES,
-]
