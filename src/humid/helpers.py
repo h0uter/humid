@@ -1,7 +1,10 @@
+from typing_extensions import deprecated
+
 from humid import helpers
 from humid.core import ORDER
 
 
+@deprecated("new hrids generation no longer matches this calculation")
 def probability_of_duplicate(list_lists_of_words: list[list[str]]):
     lengths = []
     odds = 1
@@ -14,6 +17,7 @@ def probability_of_duplicate(list_lists_of_words: list[list[str]]):
     return odds
 
 
+@deprecated("new hrids generation no longer matches this calculation")
 def one_in_XXXXX_chance_of_duplicate(list_lists_of_words: list[list[str]]):
     lengths = []
     odds = 1

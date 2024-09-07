@@ -67,6 +67,3 @@ def test_no_suffixed_usage_of_another_word():
 
     print(starting_with_other_word)
     assert len(starting_with_other_word) == 0
-
-
-test_no_suffixed_usage_of_another_word()

@@ -19,14 +19,17 @@ ORDER = [
 SEP = "-"
 """The separator for the hrid"""
 
+CHARACTERS = string.ascii_letters + string.digits
+"""The characters used for generating the identifier"""
 
-def _make_identifier(length=22) -> str:
+
+def _make_identifier(length: int = 22) -> str:
     """Generate a random alphanumeric string.
 
     Returns:
         str: The random string.
     """
-    return "".join(random.choices(string.ascii_letters + string.digits, k=length))
+    return "".join(random.choices(CHARACTERS, k=length))
 
 
 def hrid() -> str:

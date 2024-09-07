@@ -19,6 +19,9 @@ keywords = [
     "noun",
 ]
 classifiers = ['Programming Language :: Python :: 3']
+dependencies = [
+    "typing-extensions>=4.12.2",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.3.2", "pre-commit>=3.5.0", "uniplot>=0.14.1"]
