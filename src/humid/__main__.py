@@ -5,9 +5,11 @@ from humid import hrid
 
 def main():
     parser = argparse.ArgumentParser(description="humid generates human readable ids.")
-    # parser.add_argument("--foo", type=str, help="A sample argument for foo")
-    # parser.add_argument("--bar", type=int, help="A sample argument for bar")
+    parser.add_argument(
+        "-n", "--number", type=int, help="The number of hrids to generate."
+    )
 
-    parser.parse_args()
+    args = parser.parse_args()
 
-    print(hrid())
+    for _ in range(args.number):
+        print(hrid())
