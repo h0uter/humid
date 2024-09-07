@@ -48,38 +48,32 @@
 
 # Quickstart
 
-install
+Install and run from shell
 ```sh
-pip install humid
-python -m humid
->> archaic-goose-y8yMIYjt91V8cejIxMa6G4
+> pip install humid
+> python -m humid
+archaic-goose-y8yMIYjt91V8cejIxMa6G4
+# or
+> humid
+archaic-goose-y8yMIYjt91V8cejIxMa6G4
 ```
+
 
 Use in Python code
 ```python
-from humid import hrid
+>> from humid import hrid
 
-uuid = hrid()
-print(uuid)
->> archaic-goose-y8yMIYjt91V8cejIxMa6G4
+>> uuid = hrid()
+>> print(uuid)
+archaic-goose-y8yMIYjt91V8cejIxMa6G4
 ```
-
-<!--
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
 
 
 # Why humid?
+- **Improved Usability and Readability::** Human-readable IDs are easier to remember, recognize, and type compared to traditional IDs (like UUIDs or hashes). For example, instead of dealing with an ID like `4f52a6c7-e938-4d5e-9ad6-d89d62c7a90b`, a human-readable ID such as `archaic-goose-y8yMIYjt91V8cejIxMa6G4` is far more user-friendly.
 
--  -->
 
-
-<div align="right">(<a href="#readme-top">back to top</a>)</div>
-
-# Planned Improvements
-
-- [ ] command line options
-  - [ ] different types of hrid's
-- [ ] setup script alias
-
+- **Enhanced Communication::** When IDs are readable, they can be easily communicated over different channels, such as spoken language, emails, or text messages. This is especially useful in contexts like customer support or during collaborative work sessions, where team members need to quickly and accurately communicate specific IDs.
 
 <div align="right">(<a href="#readme-top">back to top</a>)</div>
