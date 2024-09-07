@@ -35,4 +35,38 @@ def test_no_spaces_in_words():
     assert len(words_with_spaces) == 0
 
 
-test_no_spaces_in_words()
+def test_no_prefixed_usage_of_another_word():
+    """Checks if a word is not an existing word with a suffix."""
+    all_words = sum(ORDER, [])
+    starting_with_other_word: list[tuple[str, str]] = []
+
+    for word in all_words:
+        other_words = set(all_words)
+        other_words.remove(word)
+
+        for other_word in list(other_words):
+            if other_word.startswith(word):
+                starting_with_other_word.append((other_word, word))
+
+    print(starting_with_other_word)
+    assert len(starting_with_other_word) == 0
+
+
+def test_no_suffixed_usage_of_another_word():
+    """Checks if a word is not an existing word with a suffix."""
+    all_words = sum(ORDER, [])
+    starting_with_other_word: list[tuple[str, str]] = []
+
+    for word in all_words:
+        other_words = set(all_words)
+        other_words.remove(word)
+
+        for other_word in list(other_words):
+            if other_word.endswith(word):
+                starting_with_other_word.append((other_word, word))
+
+    print(starting_with_other_word)
+    assert len(starting_with_other_word) == 0
+
+
+test_no_suffixed_usage_of_another_word()
