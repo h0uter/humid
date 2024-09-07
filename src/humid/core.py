@@ -20,7 +20,7 @@ ORDER = [
 SEP = "-"
 
 
-def make_identifier(length=22) -> str:
+def _make_identifier(length=22) -> str:
     """Generate a random alphanumeric string.
 
     Returns:
@@ -41,7 +41,7 @@ def hrid() -> str:
         selection.append(random.choice(words))
 
     """Add the identifier string"""
-    selection.append(make_identifier())
+    selection.append(_make_identifier())
 
     the_id = SEP.join(selection)
 
