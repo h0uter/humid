@@ -31,7 +31,7 @@
   <ol>
     <li><a href="#about-the-project">About the Project</a></li>
     <li><a href="#quickstart">Quickstart</a></li>
-    <li><a href="#planned-improvements">Planned Improvements</a></li>
+    <li><a href="#why-humid">Why humid?</a></li>
   </ol>
 </details>
 
