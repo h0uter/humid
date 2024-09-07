@@ -80,3 +80,13 @@ def test_no_suffixed_usage_of_another_word():
 
     print(starting_with_other_word)
     assert len(starting_with_other_word) == 0
+
+
+def test_minimum_human_readable_part_length():
+    """check whether the minimum length of the human readable part is within bounds"""
+    pass
+
+
+def test_maximum_human_readable_part_length():
+    """check whether the maximum length of the human readable part is within bounds"""
+    pass
