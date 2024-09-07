@@ -13,3 +13,6 @@ def main():
 
     for _ in range(args.number):
         print(hrid())
+
+
+main()
