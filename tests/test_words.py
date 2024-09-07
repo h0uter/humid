@@ -35,6 +35,19 @@ def test_no_spaces_in_words():
     assert len(words_with_spaces) == 0
 
 
+def test_no_dashses_in_words():
+    """Test whether there are undesired dashes in any of the words."""
+    all_words = sum(ORDER, [])
+    words_with_spaces = []
+
+    for word in all_words:
+        if "-" in word:
+            words_with_spaces.append(word)
+
+    print(f"{words_with_spaces=}")
+    assert len(words_with_spaces) == 0
+
+
 def test_no_prefixed_usage_of_another_word():
     """Checks if a word is not an existing word with a suffix."""
     all_words = sum(ORDER, [])
