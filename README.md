@@ -52,7 +52,7 @@ install
 ```sh
 pip install humid
 python -m humid
->> elegant-redfox-vkynw0OlJDxI15gcgdLmUn
+>> archaic-goose-y8yMIYjt91V8cejIxMa6G4
 ```
 
 Use in Python code
@@ -61,7 +61,7 @@ from humid import hrid
 
 uuid = hrid()
 print(uuid)
->> elegant-redfox-vkynw0OlJDxI15gcgdLmUn
+>> archaic-goose-y8yMIYjt91V8cejIxMa6G4
 ```
 
 <!--
