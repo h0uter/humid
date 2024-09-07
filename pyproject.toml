@@ -3,7 +3,7 @@ name = "humid"
 version = "0.2.0"
 description = "Human Friendly UUIDs that are readable and pronounceable."
 authors = [{ name = "W. Meijer", email = "houterm+humid@gmail.com" }]
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 readme = "README.md"
 license = { text = "MIT" }
 keywords = [
