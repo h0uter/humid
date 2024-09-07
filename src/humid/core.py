@@ -10,14 +10,14 @@ from .words.pokemon import pokemon_names as NAMES
 from .words.shape import SHAPES
 from .words.size import SIZES
 
-"""The order in which the hrid is constructed."""
 ORDER = [
     OPINIONS + SIZES + AGES + SHAPES + COLORS + ORIGINS,
     NAMES + ANIMALS,
 ]
+"""The order in which the hrid is constructed."""
 
-"""The separator for the hrid"""
 SEP = "-"
+"""The separator for the hrid"""
 
 
 def _make_identifier(length=22) -> str:
