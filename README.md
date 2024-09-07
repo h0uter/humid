@@ -9,7 +9,7 @@
 <br />
 <div align="center">
     <div align="center">
-    <img src=".readme/the logo.png" alt="alt text" width="200" height="whatever">
+    <img src=".readme/the logo.png" alt="alt text" width="250" height="whatever">
     </div>
   <!-- <h3 align="center">humid</h3> -->
 
