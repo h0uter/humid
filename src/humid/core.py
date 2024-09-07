@@ -38,6 +38,10 @@ def hrid() -> str:
 
     Returns:
         str: The human readable identifier based on elements in `ORDER`.
+
+    Examples:
+        >>> hrid()
+        'modest-tarpon-oSYCzJPazgTg94KqiEb392'
     """
     selection: list[str] = []
     for words in ORDER:
