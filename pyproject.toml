@@ -1,21 +1,22 @@
 [project]
 name = "humid"
-version = "0.1.1"
+version = "0.2.0"
 description = "Human Friendly UUIDs that are readable and pronounceable."
 authors = [{ name = "W. Meijer", email = "houterm+humid@gmail.com" }]
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 readme = "README.md"
 license = { text = "MIT" }
 keywords = [
-    "readable",
     "UUID",
     "ID",
+    "identifier",
+    "unique",
+    "readable",
     "human friendly",
     "pronouncable",
     "adjective",
     "word",
     "noun",
-    "generate",
 ]
 classifiers = ['Programming Language :: Python :: 3']
 

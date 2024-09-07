@@ -42,3 +42,18 @@ def show_risk() -> None:
 def print_as_list(strings: list[str]):
     for element in strings:
         print(f'"{element}",')
+
+
+# Note that adjectives should always go in this order in the english language.
+# adjective_order = [
+#     QUANTITIES,
+#     OPINIONS,
+#     SIZES,
+#     AGES,
+#     SHAPES,
+#     COLORS,
+#     ORIGINS,
+#     MATERIALS,
+#     PURPOSES,
+#     NAMES,
+# ]
