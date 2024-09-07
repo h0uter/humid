@@ -84,9 +84,9 @@ def test_no_suffixed_usage_of_another_word():
 
 def test_minimum_human_readable_part_length():
     """check whether the minimum length of the human readable part is within bounds"""
-    pass
+    assert False
 
 
 def test_maximum_human_readable_part_length():
     """check whether the maximum length of the human readable part is within bounds"""
-    pass
+    assert False
