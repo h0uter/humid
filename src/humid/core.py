@@ -9,7 +9,7 @@ ORDER = [
 ]
 """The order in which the hrid is constructed."""
 
-SEP = "-"
+SEPARATOR = "-"
 """The separator for the hrid"""
 
 CHARACTERS = string.ascii_letters + string.digits
@@ -43,6 +43,6 @@ def hrid() -> str:
     """Add the identifier string"""
     selection.append(_make_identifier())
 
-    the_id = SEP.join(selection)
+    the_id = SEPARATOR.join(selection)
 
     return the_id
