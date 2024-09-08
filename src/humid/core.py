@@ -4,7 +4,9 @@ import string
 from .words import W
 
 ORDER = [
+    # first part
     W["opinions"] + W["sizes"] + W["ages"] + W["shapes"] + W["colors"] + W["origins"],
+    # second part
     W["pokemons"] + W["animals"],
 ]
 """The order in which the hrid is constructed."""
