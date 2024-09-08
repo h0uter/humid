@@ -1,6 +1,6 @@
 """humid helps generating human friendly identifiers."""
 
-from ._core import hrid
+from .core import hrid
 
 __all__ = ["hrid"]
 

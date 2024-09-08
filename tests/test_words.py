@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-from humid._core import ORDER
+from humid.core import ORDER
 
 
 def test_no_duplicates():
