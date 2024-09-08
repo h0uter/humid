@@ -1,3 +1,5 @@
+"""The core of the humid library."""
+
 import random
 import string
 
