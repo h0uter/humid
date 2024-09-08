@@ -9,7 +9,8 @@
 <br />
 <div align="center">
     <div align="center">
-    <img src=".readme/the logo.png" alt="alt text" width="250" height="whatever">
+    <!-- <img src=".readme/the logo.png" alt="alt text" width="250" height="whatever"> -->
+    <img src="https://raw.githubusercontent.com/h0uter/humid/main/.readme/the%20logo.png" alt="alt text" width="250" height="whatever">
     </div>
   <!-- <h3 align="center">humid</h3> -->
 
@@ -38,7 +39,7 @@
 # About the Project
 
 <div align="center">
-    <img src=".readme/demo.gif" alt="alt text" width="1000" height="whatever">
+    <img src="https://raw.githubusercontent.com/h0uter/humid/main/.readme/demo.gif" alt="alt text" width="1000" height="whatever">
 </div>
 
 `humid` makes it easy to generate **h**uman **r**eadable uu**id**'s (`hrid`'s) that are readable and pronounceable. Creation follows the pattern: `{ADJECTIVE}-{ANIMAL|POKEMON}-{UUID*22}`.
