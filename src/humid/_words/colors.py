@@ -31,7 +31,6 @@ COLORS = [
     "aqua",
     "ruby",
     "sapphire",
-    "ivory",
     "chartreuse",
     "plum",
     "lime",
@@ -46,7 +45,6 @@ COLORS = [
     "khaki",
     "burgundy",
     "copper",
-    "salmon",
     "apricot",
     "cerulean",
 ]
