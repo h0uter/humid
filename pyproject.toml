@@ -19,9 +19,7 @@ keywords = [
     "noun",
 ]
 classifiers = ['Programming Language :: Python :: 3']
-dependencies = [
-    "typing-extensions>=4.12.2",
-]
+dependencies = ["typing-extensions>=4.12.2"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.3.2", "pre-commit>=3.5.0", "uniplot>=0.14.1"]
@@ -38,3 +36,38 @@ build-backend = "pdm.backend"
 [tool.pdm]
 distribution = true
 build.package-dir = "src"
+
+[tool.ruff]
+extend-exclude = ["experiments"]
+
+
+[tool.ruff.lint]
+# See complete list: https://docs.astral.sh/ruff/rules/
+select = [
+    "I",   # isort
+    "E",   # pycodestyle
+    "W",   # pycodestyle
+    "B",   # bugbear
+    "F",   # pyflakes
+    "UP",  # pyupgrade
+    "RUF", # ruff
+    "PL",  # pylint
+    "D",   # pydocstyle
+]
+fixable = [
+    "I", # isort
+]
+
+ignore = [
+    "E501", # line too long
+    # "UP006",   # use pipe for union type annotation
+    # "UP007",   # use pipe for union type annotation
+    # "PLR0911", # too many return statements
+    # "PLR0912", # too many branches
+    # "PLR0913", # too many arguments
+    # "PLR0915", # too many statements
+    # "PLR2004", # magic value comparison
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

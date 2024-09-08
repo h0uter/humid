@@ -1,12 +1,16 @@
+"""These tests validate the basic workings of the package."""
+
 from humid import hrid
 
 
 def test_basic():
+    """Test whether a hrid is outputted of the correct type."""
     my_id = hrid()
     assert isinstance(my_id, str)
 
 
 def test_no_duplicate_id():
+    """Test whether no collisions are encountered when generating N times."""
     TIMES_TO_GENERATE = 1_000
     ids = set()
 

@@ -1,11 +1,12 @@
+"""These tests validate the words that are used for hrid generation."""
+
 from collections import Counter
 
-from humid.core import ORDER
+from humid._core import ORDER
 
 
 def test_no_duplicates():
     """Test whether there are any duplicates per category."""
-
     for list_of_words in ORDER:
         duplicates = [
             item for item, count in Counter(list_of_words).items() if count > 1
@@ -16,7 +17,7 @@ def test_no_duplicates():
 
 def test_no_duplicates_between():
     """Test whether there are any duplicates in total."""
-    all_words = sum(ORDER, [])
+    all_words = [item for sublist in ORDER for item in sublist]
     duplicates = [item for item, count in Counter(all_words).items() if count > 1]
     print(f"{duplicates=}")
     assert len(all_words) == len(set(all_words))
@@ -24,7 +25,7 @@ def test_no_duplicates_between():
 
 def test_no_spaces_in_words():
     """Test whether there are undesired spaces in any of the words."""
-    all_words = sum(ORDER, [])
+    all_words = [item for sublist in ORDER for item in sublist]
     words_with_spaces = []
 
     for word in all_words:
@@ -37,7 +38,7 @@ def test_no_spaces_in_words():
 
 def test_no_dashses_in_words():
     """Test whether there are undesired dashes in any of the words."""
-    all_words = sum(ORDER, [])
+    all_words = [item for sublist in ORDER for item in sublist]
     words_with_dashes = []
 
     for word in all_words:
@@ -50,7 +51,7 @@ def test_no_dashses_in_words():
 
 def test_no_prefixed_usage_of_another_word():
     """Checks if a word is not an existing word with a suffix."""
-    all_words = sum(ORDER, [])
+    all_words = [item for sublist in ORDER for item in sublist]
     starting_with_other_word: list[tuple[str, str]] = []
 
     for word in all_words:
@@ -67,7 +68,7 @@ def test_no_prefixed_usage_of_another_word():
 
 def test_no_suffixed_usage_of_another_word():
     """Checks if a word is not an existing word with a suffix."""
-    all_words = sum(ORDER, [])
+    all_words = [item for sublist in ORDER for item in sublist]
     starting_with_other_word: list[tuple[str, str]] = []
 
     for word in all_words:
@@ -83,10 +84,10 @@ def test_no_suffixed_usage_of_another_word():
 
 
 def test_minimum_human_readable_part_length():
-    """check whether the minimum length of the human readable part is within bounds"""
-    assert False
+    """Check whether the minimum length of the human readable part is within bounds."""
+    raise AssertionError()
 
 
 def test_maximum_human_readable_part_length():
-    """check whether the maximum length of the human readable part is within bounds"""
-    assert False
+    """Check whether the maximum length of the human readable part is within bounds."""
+    raise AssertionError()

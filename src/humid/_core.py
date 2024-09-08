@@ -1,7 +1,7 @@
 import random
 import string
 
-from .words import W
+from ._words import W
 
 ORDER = [
     # first part
@@ -29,7 +29,6 @@ def _make_identifier(length: int = 22) -> str:
 
 def hrid() -> str:
     """Returns a default human readable identifier.
-
 
     Returns:
         str: The human readable identifier based on elements in `ORDER`.

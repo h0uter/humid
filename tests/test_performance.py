@@ -1,3 +1,5 @@
+"""Compare the performance of humid vs std lib UUIDs."""
+
 import statistics
 import time
 from collections.abc import Callable
@@ -11,7 +13,7 @@ from humid import hrid
 T = TypeVar("T", UUID, str)  # Define a type variable that can be either UUID or str
 
 
-def compare(uuids: list[T]) -> bool:
+def _compare(uuids: list[T]) -> bool:
     for i in range(len(uuids)):
         for j in range(i + 1, len(uuids)):
             if uuids[i] == uuids[j]:
@@ -21,7 +23,7 @@ def compare(uuids: list[T]) -> bool:
     return True
 
 
-def obtain_durations(
+def _obtain_durations(
     uuid_constructor: Callable[[], T],
     nr_uuids: int,
     n_experiments: int,
@@ -36,7 +38,7 @@ def obtain_durations(
             print(f"Starting experiment {i}", end="\r")
 
         start = time.perf_counter()
-        compare(uuids)
+        _compare(uuids)
         end = time.perf_counter()
 
         duration = end - start
@@ -60,13 +62,13 @@ def obtain_durations(
 
 
 def test_hrid_comparison_faster_than_uuid4_comparison():
-    """Test comparison of hrid's is at least same speed or greater than uuid4's"""
+    """Test comparison of hrid's is at least same speed or greater than uuid4's."""
     N_EXPERIMENTS = 100
 
-    uuid4_avg_duration = obtain_durations(
+    uuid4_avg_duration = _obtain_durations(
         uuid_constructor=uuid4, nr_uuids=1000, n_experiments=N_EXPERIMENTS
     )
-    hrid_avg_duration = obtain_durations(
+    hrid_avg_duration = _obtain_durations(
         uuid_constructor=hrid, nr_uuids=1000, n_experiments=N_EXPERIMENTS
     )
 
