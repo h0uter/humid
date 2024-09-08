@@ -1,18 +1,11 @@
 import random
 import string
 
-from .words.age import AGES
-from .words.animals import ANIMALS
-from .words.color import COLORS
-from .words.opininion import OPINIONS
-from .words.origin import ORIGINS
-from .words.pokemon import pokemon_names as NAMES
-from .words.shape import SHAPES
-from .words.size import SIZES
+from .words import W
 
 ORDER = [
-    OPINIONS + SIZES + AGES + SHAPES + COLORS + ORIGINS,
-    NAMES + ANIMALS,
+    W["opinions"] + W["sizes"] + W["ages"] + W["shapes"] + W["colors"] + W["origins"],
+    W["pokemons"] + W["animals"],
 ]
 """The order in which the hrid is constructed."""
 

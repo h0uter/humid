@@ -1,4 +1,4 @@
-pokemon_names = [
+POKEMONS = [
     "Bulbasaur",
     "Ivysaur",
     "Venusaur",
