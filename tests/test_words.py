@@ -38,7 +38,7 @@ def test_no_spaces_in_words():
     assert len(words_with_spaces) == 0
 
 
-def test_no_dashses_in_words():
+def test_no_dashes_in_words():
     """Test whether there are undesired dashes in any of the words."""
     all_words = [item for sublist in ORDER for item in sublist]
     words_with_dashes = []
