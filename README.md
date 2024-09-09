@@ -1,9 +1,10 @@
 <a name="readme-top"></a>
 [![Downloads](https://static.pepy.tech/badge/humid)](https://pepy.tech/project/humid)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+![tests](https://github.com/h0uter/humid/workflows/Test/badge.svg)
+[![PDM](https://camo.githubusercontent.com/2f56a2dc4c9b19beec5347774a078871a81e00d624a51fe9cc20a8ae8ac4e957/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e743f75726c3d687474707325334125324625324663646e2e6a7364656c6976722e6e6574253246676825324670646d2d70726f6a6563742532462e67697468756225324662616467652e6a736f6e)](https://pdm-project.org/en/latest/)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://pre-commit.com/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
-
 <!-- PROJECT LOGO -->
 
 <br />
