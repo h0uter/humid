@@ -1,11 +1,14 @@
-from .age import AGES
+from .ages import AGES
 from .animals import ANIMALS
 from .colors import COLORS
-from .opininions import OPINIONS
-from .origin import ORIGINS
-from .pokemon import POKEMONS
-from .shape import SHAPES
-from .size import SIZES
+from .materials import MATERIALS
+from .opinions import OPINIONS
+from .origins import ORIGINS
+from .pokemons import POKEMONS
+from .purposes import PURPOSES
+from .quantities import QUANTITIES
+from .shapes import SHAPES
+from .sizes import SIZES
 
 W: dict[str, list[str]] = {
     # adjectives
@@ -15,6 +18,9 @@ W: dict[str, list[str]] = {
     "origins": ORIGINS,
     "shapes": SHAPES,
     "sizes": SIZES,
+    "quantities": QUANTITIES,
+    "materials": MATERIALS,
+    "purposes": PURPOSES,
     # Nouns
     "animals": ANIMALS,
     "pokemons": POKEMONS,

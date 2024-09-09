@@ -11,8 +11,6 @@ COLORS = [
     "white",
     "gray",
     "golden",
-    "silver",
-    "bronze",
     "turquoise",
     "amber",
     "crimson",
@@ -44,7 +42,6 @@ COLORS = [
     "mauve",
     "khaki",
     "burgundy",
-    "copper",
     "apricot",
     "cerulean",
 ]

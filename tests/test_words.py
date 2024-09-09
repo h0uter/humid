@@ -4,22 +4,23 @@ from collections import Counter
 
 import pytest
 
-from humid.core import ORDER
+from humid.core import ORDER, W
 
 
 def test_no_duplicates():
     """Test whether there are any duplicates per category."""
-    for list_of_words in ORDER:
+    for list_of_words in W.values():
         duplicates = [
             item for item, count in Counter(list_of_words).items() if count > 1
         ]
-        print(f"{duplicates=}")
+        if duplicates:
+            print(f"{duplicates=}")
         assert len(list_of_words) == len(set(list_of_words))
 
 
 def test_no_duplicates_between():
     """Test whether there are any duplicates in total."""
-    all_words = [item for sublist in ORDER for item in sublist]
+    all_words = [item for sublist in W.values() for item in sublist]
     duplicates = [item for item, count in Counter(all_words).items() if count > 1]
     print(f"{duplicates=}")
     assert len(all_words) == len(set(all_words))
@@ -27,7 +28,7 @@ def test_no_duplicates_between():
 
 def test_no_spaces_in_words():
     """Test whether there are undesired spaces in any of the words."""
-    all_words = [item for sublist in ORDER for item in sublist]
+    all_words = [item for sublist in W.values() for item in sublist]
     words_with_spaces = []
 
     for word in all_words:
@@ -40,7 +41,7 @@ def test_no_spaces_in_words():
 
 def test_no_dashes_in_words():
     """Test whether there are undesired dashes in any of the words."""
-    all_words = [item for sublist in ORDER for item in sublist]
+    all_words = [item for sublist in W.values() for item in sublist]
     words_with_dashes = []
 
     for word in all_words:

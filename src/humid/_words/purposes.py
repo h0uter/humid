@@ -13,7 +13,6 @@ PURPOSES = [
     "baking",
     "dancing",
     "painting",
-    "training",
     "fishing",
     "hiking",
     "decorating",

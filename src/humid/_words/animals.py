@@ -77,7 +77,6 @@ ANIMALS = [
     "bernhardiner",
     "bilby",
     "binturong",
-    "birch",
     "bird",
     "bison",
     # "black bear",

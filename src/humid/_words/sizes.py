@@ -21,7 +21,6 @@ SIZES = [
     "petite",
     "immense",
     "colossal",
-    "little",
     "giant",
     "microscopic",
     "enormous",
