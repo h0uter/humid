@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-[![text](https://img.shields.io/pypi/v/humid?logo=python&logoColor=%23cccccc)]([cccccc](https://pypi.org/project/humid/))
+[![text](https://img.shields.io/pypi/v/humid?logo=python&logoColor=%23cccccc)](https://pypi.org/project/humid/)
 [![Downloads](https://static.pepy.tech/badge/humid)](https://pepy.tech/project/humid)
 ![tests](https://github.com/h0uter/humid/workflows/Test/badge.svg)
 [![PDM](https://camo.githubusercontent.com/2f56a2dc4c9b19beec5347774a078871a81e00d624a51fe9cc20a8ae8ac4e957/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e743f75726c3d687474707325334125324625324663646e2e6a7364656c6976722e6e6574253246676825324670646d2d70726f6a6563742532462e67697468756225324662616467652e6a736f6e)](https://pdm-project.org/en/latest/)
