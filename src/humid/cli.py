@@ -36,7 +36,7 @@ def check_word():
         print(f"Word already in humid dictionary: {args.word in all_words}")
 
 
-def print_as_list(strings: list[str]):
-    """Print a list of words as string so it can be copy pasted into one of the files in `src/humid/words/`."""
+def print_for_copy_paste(strings: list[str]):
+    """Print for easy copy pasting into one of the files in `src/humid/words/`."""
     for element in strings:
         print(f'"{element}",')

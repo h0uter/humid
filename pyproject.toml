@@ -59,16 +59,6 @@ fixable = [
     "I", # isort
 ]
 
-ignore = [
-    "E501", # line too long
-    # "UP006",   # use pipe for union type annotation
-    # "UP007",   # use pipe for union type annotation
-    # "PLR0911", # too many return statements
-    # "PLR0912", # too many branches
-    # "PLR0913", # too many arguments
-    # "PLR0915", # too many statements
-    # "PLR2004", # magic value comparison
-]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"

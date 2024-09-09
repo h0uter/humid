@@ -55,7 +55,9 @@ WHITELIST = {"amberjack", "newt", "goldenretriever", "greatdane", "badger"}
 
 
 def test_later_word_does_not_start_with_earlier_word():
-    """Checks if a word is not an existing word with a suffix.But only checks this for words that can follow eachother in the hrid based on their order.
+    """Checks if a word is not an existing word with a suffix.
+
+    Only checks this for words that can follow eachother in the hrid based on order.
 
     Example:
         avoid `black-blackbird`
@@ -82,7 +84,9 @@ def test_later_word_does_not_start_with_earlier_word():
 
 @pytest.mark.skip("Actually this is ok.")
 def test_earlier_word_does_not_end_in_later_word():
-    """Checks if a word is not an existing word with a suffix.But only checks this for words that can follow eachother in the hrid based on their order.
+    """Checks if a word is not an existing word with a suffix.
+
+    But only checks this for words that can follow eachother in the hrid based on order.
 
     Example:
         avoid `elegant-ant`
