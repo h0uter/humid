@@ -8,7 +8,7 @@ from uuid import UUID, uuid4
 
 from uniplot import histogram
 
-from humid import hrid
+from humid import hfid
 
 T = TypeVar("T", UUID, str)  # Define a type variable that can be either UUID or str
 
@@ -61,18 +61,18 @@ def _obtain_durations(
     return avg_duration
 
 
-def test_hrid_comparison_faster_than_uuid4_comparison():
-    """Test comparison of hrid's is at least same speed or greater than uuid4's."""
+def test_hfid_comparison_faster_than_uuid4_comparison():
+    """Test comparison of hfid's is at least same speed or greater than uuid4's."""
     N_EXPERIMENTS = 100
 
     uuid4_avg_duration = _obtain_durations(
         uuid_constructor=uuid4, nr_uuids=1000, n_experiments=N_EXPERIMENTS
     )
-    hrid_avg_duration = _obtain_durations(
-        uuid_constructor=hrid, nr_uuids=1000, n_experiments=N_EXPERIMENTS
+    hfid_avg_duration = _obtain_durations(
+        uuid_constructor=hfid, nr_uuids=1000, n_experiments=N_EXPERIMENTS
     )
 
     print(f"uuid4 avg duration: {uuid4_avg_duration}")
-    print(f"hrid avg duration: {hrid_avg_duration}")
+    print(f"hfid avg duration: {hfid_avg_duration}")
 
-    assert hrid_avg_duration <= uuid4_avg_duration
+    assert hfid_avg_duration <= uuid4_avg_duration

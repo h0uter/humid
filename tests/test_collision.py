@@ -1,6 +1,6 @@
-"""These tests validate probability of generating colliding hrids."""
+"""These tests validate probability of generating colliding hfids."""
 
-from humid import hrid
+from humid import hfid
 
 
 def test_no_duplicate_id():
@@ -9,7 +9,7 @@ def test_no_duplicate_id():
     ids = set()
 
     for i in range(TIMES_TO_GENERATE):
-        the_id = hrid()
+        the_id = hfid()
 
         if the_id in ids:
             raise ValueError(f"iter {i}: {the_id} already present in set")

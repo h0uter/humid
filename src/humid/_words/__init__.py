@@ -19,6 +19,6 @@ W: dict[str, list[str]] = {
     "animals": ANIMALS,
     "pokemons": POKEMONS,
 }
-"""All the words that are available for generation of hrid's"""
+"""All the words that are available for generation of hfid's"""
 
 __all__ = ["W"]

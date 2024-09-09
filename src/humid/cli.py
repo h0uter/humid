@@ -3,20 +3,20 @@
 import argparse
 
 from ._words import W
-from .core import hrid
+from .core import hfid
 
 
 def generate():
-    """Runs the cli for generating new hrid's."""
+    """Runs the cli for generating new hfid's."""
     parser = argparse.ArgumentParser(description="humid generates human readable ids.")
     parser.add_argument(
-        "-n", "--number", type=int, help="The number of hrids to generate.", default=1
+        "-n", "--number", type=int, help="The number of hfids to generate.", default=1
     )
 
     args = parser.parse_args()
 
     for _ in range(args.number):
-        print(hrid())
+        print(hfid())
 
 
 def check_word():

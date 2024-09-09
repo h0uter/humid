@@ -3,11 +3,11 @@
 import subprocess
 
 
-def test_hrid_cli():
+def test_hfid_cli():
     """Can we run the help flag."""
     # Call the CLI tool using subprocess
     result = subprocess.run(
-        ["hrid", "--help"], capture_output=True, text=True, check=True
+        ["hfid", "--help"], capture_output=True, text=True, check=True
     )
 
     # Check the exit code

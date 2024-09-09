@@ -27,8 +27,8 @@ docs = ["mkdocs-material>=9.5.33", "mkdocstrings-python>=1.10.9"]
 
 [project.scripts]
 humid = "humid.cli:generate"
-hrid = "humid.cli:generate"
-hrid-new-word = "humid.cli:check_word"
+hfid = "humid.cli:generate"
+hfid-new-word = "humid.cli:check_word"
 
 [build-system]
 requires = ["pdm-backend"]

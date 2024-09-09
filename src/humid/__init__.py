@@ -1,8 +1,8 @@
 """humid helps generating human friendly identifiers."""
 
-from .core import hrid
+from .core import hfid
 
-__all__ = ["hrid"]
+__all__ = ["hfid"]
 
 # Note that adjectives should always go in this order in the english language.
 # adjective_order = [

@@ -11,10 +11,10 @@ ORDER = [
     # second part
     W["pokemons"] + W["animals"],
 ]
-"""The order in which the hrid is constructed."""
+"""The order in which the hfid is constructed."""
 
 SEPARATOR = "-"
-"""The separator for the hrid"""
+"""The separator for the hfid"""
 
 CHARACTERS = string.ascii_letters + string.digits
 """The characters used for generating the identifier"""
@@ -29,14 +29,14 @@ def _make_identifier(length: int = 22) -> str:
     return "".join(random.choices(CHARACTERS, k=length))
 
 
-def hrid() -> str:
-    """Returns a default human readable identifier.
+def hfid() -> str:
+    """Returns a default human friendly identifier.
 
     Returns:
-        str: The human readable identifier based on elements in `ORDER`.
+        str: The human friendly identifier based on elements in `ORDER`.
 
     Examples:
-        >>> hrid()
+        >>> hfid()
         'modest-tarpon-oSYCzJPazgTg94KqiEb392'
     """
     selection: list[str] = []
