@@ -25,6 +25,10 @@ dependencies = ["typing-extensions>=4.12.2"]
 dev = ["pytest>=8.3.2", "pre-commit>=3.5.0", "uniplot>=0.14.1"]
 docs = ["mkdocs-material>=9.5.33", "mkdocstrings-python>=1.10.9"]
 
+[project.urls]
+Source = "https://github.com/h0uter/humid"
+Issues = "https://github.com/h0uter/humid/issues"
+
 [project.scripts]
 humid = "humid.cli:generate"
 hfid = "humid.cli:generate"
